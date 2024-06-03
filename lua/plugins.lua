@@ -1,5 +1,17 @@
 -- see https://vi.stackexchange.com/questions/43681/simplest-setup-for-nvim-and-rust-and-system-rust-analyzer
 return {
+    {
+        {
+            "nvim-treesitter/nvim-treesitter",
+            build = ":TSUpdate",
+            config = function()
+                require("nvim-treesitter.configs").setup {
+                    ensure_installed = { "c", "lua", "rust" },
+                    highlight = { enable = true, }
+                }
+            end
+        },
+    },
     { 'rust-lang/rust.vim' },
     {
         'mrcjkb/rustaceanvim',
@@ -20,6 +32,6 @@ return {
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
             "MunifTanjim/nui.nvim",
             -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+        }
     }
-}
 }
