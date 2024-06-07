@@ -1,4 +1,5 @@
 set number
+set relativenumber
 set expandtab
 set cc=100
 set wildmode=longest,list
