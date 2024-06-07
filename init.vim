@@ -71,5 +71,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup('plugins')
 require('colorscheme')
 require('neotree')
+require('lualine_config')
 
 EOF
