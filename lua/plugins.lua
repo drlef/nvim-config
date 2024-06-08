@@ -37,5 +37,11 @@ return {
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
-    }
+    },
+    {
+        "junegunn/fzf",
+        dir = "~/.fzf",
+        run = "./install -all",
+    },
+    { "junegunn/fzf.vim" },
 }
