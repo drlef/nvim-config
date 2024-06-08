@@ -13,6 +13,9 @@ set expandtab
 command TREE Neotree
 command TB Neotree buffers
 
+" example of custom fzf command
+command! -complete=dir -nargs=? LS call fzf#run(fzf#wrap({'source': 'ls', 'dir': <q-args>}))
+
 " trim whitespace on write
 fun! TrimWhitespace()
     let l:save = winsaveview()
