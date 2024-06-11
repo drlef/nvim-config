@@ -1,14 +1,3 @@
-set number
-set relativenumber
-set expandtab
-set cc=100
-set wildmode=longest,list
-set clipboard=unnamedplus
-set autoread
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
 " aliases
 command TREE Neotree
 command TB Neotree buffers
@@ -71,6 +60,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+require('options')
 require('lazy').setup('plugins')
 require('colorscheme')
 require('neotree')
