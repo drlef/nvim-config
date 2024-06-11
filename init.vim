@@ -60,8 +60,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('options')
 require('lazy').setup('plugins')
+
+require('options')
+require('keymaps')
 require('colorscheme')
 require('neotree')
 require('lualine_config')
