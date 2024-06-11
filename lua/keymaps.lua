@@ -11,3 +11,5 @@ vim.keymap.set('n', '<C-j>', '<C-w>j', opts)
 vim.keymap.set('n', '<C-k>', '<C-w>k', opts)
 vim.keymap.set('n', '<C-l>', '<C-w>l', opts)
 
+-- Neotree
+vim.keymap.set('n', '<C-t>', ':Neotree<CR>', opts)
