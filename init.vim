@@ -67,5 +67,6 @@ require('keymaps')
 require('colorscheme')
 require('neotree')
 require('lualine_config')
+require('lsp')
 
 EOF
