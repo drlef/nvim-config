@@ -51,7 +51,8 @@ return {
     { 'neovim/nvim-lspconfig',
         config = function()
             require('lspconfig')['clangd'].setup({})
-            require('lspconfig')['rust-analyzer'].setup({})
+            require('lspconfig')['rust_analyzer'].setup({})
+            require('lspconfig')['typos_lsp'].setup({})
         end
     },
     {
