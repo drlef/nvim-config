@@ -12,12 +12,6 @@ return {
             end
         },
     },
-    { 'rust-lang/rust.vim' },
-    {
-        'mrcjkb/rustaceanvim',
-        version = '^3',
-        ft = { 'rust' },
-    },
     {
         'folke/tokyonight.nvim',
         lazy = false,
@@ -57,6 +51,7 @@ return {
     { 'neovim/nvim-lspconfig',
         config = function()
             require('lspconfig')['clangd'].setup({})
+            require('lspconfig')['rust-analyzer'].setup({})
         end
     },
     {
